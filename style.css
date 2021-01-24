@@ -1,0 +1,24 @@
+html {
+  /* Sets box-sizing to border-box to be inherited by all elements on the selector bellow
+     Reference: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: border-box;
+
+  /* Sets font-size to 62.5% of browser default which is 16px. 
+     The result is 10px, so 1rem is equal to 10px. */
+  font-size: 62.5%;
+}
+
+/* Sets margin and padding to 0 in all elements including :before and after
+   Also inherits the box-sizing from the html selector */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Sets font-size to the browser default of 16px */
+body {
+  font-size: 1.6rem;
+}
